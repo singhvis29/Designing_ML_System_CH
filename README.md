@@ -24,4 +24,9 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 #### Interpretability
 
 ## Chapter 2: Introduction to ML System Design
+1. Business and ML Objective - Most companies will only care about ML metrics if it helps them improve business metrics
+2. Netflix measures the performance of their recommender system using take-rate: the number of quality plays divided by the number of recommendations a user sees.
+3. According to a 2020 survey by Algorithmia, among companies that are more sophisticated in their ML adoption (having had models in production for over five years), almost 75% can deploy a model in under 30 days. Among those just getting started with their ML pipeline, 60% take over 30 days to deploy a model.
+4. Most ML systems should have these four charac‐ teristics: reliability, scalability, maintainability, and adaptability.
+5. 
 
