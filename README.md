@@ -27,6 +27,17 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 1. Business and ML Objective - Most companies will only care about ML metrics if it helps them improve business metrics
 2. Netflix measures the performance of their recommender system using take-rate: the number of quality plays divided by the number of recommendations a user sees.
 3. According to a 2020 survey by Algorithmia, among companies that are more sophisticated in their ML adoption (having had models in production for over five years), almost 75% can deploy a model in under 30 days. Among those just getting started with their ML pipeline, 60% take over 30 days to deploy a model.
-4. Most ML systems should have these four charac‐ teristics: reliability, scalability, maintainability, and adaptability.
-5. 
+4. Most ML systems should have these four characteristics: reliability, scalability, maintainability, and adaptability.
+5. Scalability - Model can grow in complexity, traffic volume, or ML Model Count
+6. Maintainability - Code should be documented. Code, data, and artifacts should be versioned. Models should be sufficiently reproducible
+7. Adaptability - System should allow updates to data distribution and business requirements without interruption
+8. Building an ML system is an iterative and never ending process. Step of building ML system are as follows -
+  *  Step 1 - Project Scoping: Goals, Objectives, and Constraints, Resource Estimation and Allocation, Stakeholders involved etc.
+  *  Step 2 - Data Engineering: Handling data from data sources and formats
+  *  Step 3 - Extract Features and Develop Models
+  *  Step 4 - Deployment: Make model accessible to users
+  *  Step 5 - MOnitoring and Continual Learning: for performance decay and changing business requirements
+  *  Step 6 - Business Analysis: Evaluate Model performance against business goals and analyze to generate business insights
+9. Framing ML Problems -
+10 . 
 
