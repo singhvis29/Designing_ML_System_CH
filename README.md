@@ -38,6 +38,16 @@ This repo contains points discussed in the book Designing Machine Learning Syste
   *  Step 4 - Deployment: Make model accessible to users
   *  Step 5 - MOnitoring and Continual Learning: for performance decay and changing business requirements
   *  Step 6 - Business Analysis: Evaluate Model performance against business goals and analyze to generate business insights
-9. Framing ML Problems -
-10 . 
+9. Framing ML Problems - There are two aspects to framing an ML problem
+ * Output of the Model - Regression vs Classification (Binary vs Multiclass vs Multilabel)
+ * Objective Function
+10. Multiclass problems are generally harded than Binary. If a problem has too many labels, we say that classification task has high cardinality.
+11. For multilabel classification, we can approach the classification in two ways -
+ * The first is to treat it as you would a multiclass classification i.e., [0,1,0,0] vs [0,1,0,1]
+ * Second is to turn into set of binary classification problems
+12. ML model need an objective function (loss function) to guide the learning process
+13. Common loss functions are RMSE or MAE (mean absolute error) for regression, logistic loss (also log loss) for binary classification, and cross entropy for multiclass classification.
+14. We learn about decoupling objectives through an example of ranking posts for user feed. In the example we have objective of maximizing user engagement (minimize engagement loss) and maximizing the quality of content (minimize content loss) which could be at odds with each other. <br>
+   <i>loss = ɑ quality_loss + β engagement_loss</i>
+15. When there are multiple objectives, it’s a good idea to decouple them i.e. train two different models and combine their output. This also makes them easier to develop and maintain 
 
