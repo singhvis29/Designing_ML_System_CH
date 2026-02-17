@@ -49,5 +49,11 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 13. Common loss functions are RMSE or MAE (mean absolute error) for regression, logistic loss (also log loss) for binary classification, and cross entropy for multiclass classification.
 14. We learn about decoupling objectives through an example of ranking posts for user feed. In the example we have objective of maximizing user engagement (minimize engagement loss) and maximizing the quality of content (minimize content loss) which could be at odds with each other. <br>
    <i>loss = ɑ quality_loss + β engagement_loss</i>
-15. When there are multiple objectives, it’s a good idea to decouple them i.e. train two different models and combine their output. This also makes them easier to develop and maintain 
+15. When there are multiple objectives, it’s a good idea to decouple them i.e. train two different models and combine their output. This also makes them easier to develop and maintain
+
+
+## Chapter 3: Data Engineering Fundamentals
+1. In this chapter we discuss databases for two major types of processing: analytical and transactional. We also discuss how data is passed across processes and the different types of data which is passed: historical data in data storage engines, and streaming data in real-time transports.
+2. 
+3. 
 
