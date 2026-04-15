@@ -54,6 +54,6 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 
 ## Chapter 3: Data Engineering Fundamentals
 1. In this chapter we discuss databases for two major types of processing: analytical and transactional. We also discuss how data is passed across processes and the different types of data which is passed: historical data in data storage engines, and streaming data in real-time transports.
-2. 
+2.  CSV (comma-separated values) is row-major, which means consecutive elements in a row are stored next to each other in memory. Parquet is column-major, which means consecutive elements in a column are stored next to each other.
 3. 
 
