@@ -55,5 +55,8 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 ## Chapter 3: Data Engineering Fundamentals
 1. In this chapter we discuss databases for two major types of processing: analytical and transactional. We also discuss how data is passed across processes and the different types of data which is passed: historical data in data storage engines, and streaming data in real-time transports.
 2.  CSV (comma-separated values) is row-major, which means consecutive elements in a row are stored next to each other in memory. Parquet is column-major, which means consecutive elements in a column are stored next to each other.
-3. 
+3. Data Model describe how data is represented. There are two common data models - NoSQL Model and Relational Model.
+4. **Relational Model** - Data is organized into relation, each relation is a set of tuple. You can shuffle the order of the rows or the order of the columns in a relation and it’s still the same relation. Data in relational table should also be normalized. One major downside of normalization is that your data is now spread across multiple relations. The data model behind SQL has deviated from the original relational model. For example, SQL tables can contain row duplicates, whereas true relations can’t contain duplicates. 
+5. SQL is that it’s a declarative language, as opposed to Python, which is an imperative language. In the imperative paradigm, you specify the steps needed for an action and the computer executes these steps to return the outputs. In the declarative paradigm, you specify the outputs you want, and the computer figures out the steps needed to get you the queried outputs.
+6. **Declarative ML system** - With a declarative ML system, users only need to declare the features’ schema and the task, and the system will figure out the best model to perform that task with the given features. 
 
