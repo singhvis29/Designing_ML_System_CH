@@ -61,5 +61,5 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 6. **Declarative ML system** - With a declarative ML system, users only need to declare the features’ schema and the task, and the system will figure out the best model to perform that task with the given features.
 7. Two major types of nonrelational models are the document model and the graph model. The document model targets use cases where data comes in self-contained documents and relationships between one document and another are rare. The graph model goes in the opposite direction, targeting use cases where relationships between data items are common and important.
 8. **Document Model:** A collection of documents could be considered analogous to a table in a relational database, and a document analogous to a row. Document databases just shift the responsibility of assuming structures from the application that writes the data to the application that reads the data.
-9. **Graph Model:** 
+9. **Graph Model:** A graph consists of nodes and edges, where the edges represent the relationships between the nodes. A database that uses graph structures to store its data is called a graph database. 
 
