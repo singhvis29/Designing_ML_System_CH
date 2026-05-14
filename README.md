@@ -64,5 +64,10 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 9. **Graph Model:** A graph consists of nodes and edges, where the edges represent the relationships between the nodes. A database that uses graph structures to store its data is called a graph database.
 10. THis chapter then discusses the key differences between Structured vs Unstructured data.
 11. Data has been traditionally stored in two kinds of databases - OLTP (Online Transactional Processing), OLAP (Online Analytical Processing).
-12. **ETL:**
+12. **ETL:**  ETL refers to the general purpose processing and aggregating of data into the shape and the format that you want.
+13. Some cmompanies do ELT to avoid storing data in structured format to process the data as we need, however, as the data grows it become inefficient to search through the data.
+14. Modes of Dataflow:
+  * Data passing through databases
+  * Data passing through services (REST APIs)
+  * Data passing through a real-time transport like Apache Kafka and Amazon Kinesis
 
