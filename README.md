@@ -68,6 +68,13 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 13. Some cmompanies do ELT to avoid storing data in structured format to process the data as we need, however, as the data grows it become inefficient to search through the data.
 14. Modes of Dataflow:
   * Data passing through databases
-  * Data passing through services (REST APIs)
+  * Data passing through services (REST APIs/RPC) - Request driven
   * Data passing through a real-time transport like Apache Kafka and Amazon Kinesis
+15. Data passing through services -
+  * To pass data from process B to process A, process A first sends a request to process B that specifies the data A needs, and B returns the requested data through the same network. Because processes communi‐ cate through requests, we say that this is request-driven.
+  * Structuring an application as separate services gives you a microservice architecture.
+  * Implementations of a REST architecture are said to be RESTful. Even though many people think of REST as HTTP, REST doesn’t exactly mean HTTP because HTTP is just an implementation of REST
+16. Data Passing Through Real-Time Transport -
+  * 
+
 
