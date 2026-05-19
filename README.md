@@ -75,6 +75,11 @@ This repo contains points discussed in the book Designing Machine Learning Syste
   * Structuring an application as separate services gives you a microservice architecture.
   * Implementations of a REST architecture are said to be RESTful. Even though many people think of REST as HTTP, REST doesn’t exactly mean HTTP because HTTP is just an implementation of REST
 16. Data Passing Through Real-Time Transport -
-  * 
+  * Request-driven architecture works well for systems that rely more on logic than on data. Event-driven architecture works better for systems that are data-heavy.
+  * Request-driven data passing is synchronous: the target service has to listen to the request for the request to go through. We introduce a "broker" which can facilitate the transfer, technically a database can be a broker but processing in a DB is slow.
+  * The two most common types of real-time transports are pubsub, which is short for publish-subscribe, and message queue.
+  * In the pubsub model, any service can publish to different topics in a real-time transport, and any service that subscribes to a topic can read all the events in that topic. e.g. - Apache Kafka and Amazon Kinesis
+  * In a message queue model, an event often has intended consumers (an event with intended consumers is called a message), and the message queue is responsible for getting the message to the right consumers. e.g. - Apache RocketMQ and RabbitMQ
+17. Batch Processing Versus Stream Processing
 
 
