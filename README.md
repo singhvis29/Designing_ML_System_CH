@@ -81,5 +81,11 @@ This repo contains points discussed in the book Designing Machine Learning Syste
   * In the pubsub model, any service can publish to different topics in a real-time transport, and any service that subscribes to a topic can read all the events in that topic. e.g. - Apache Kafka and Amazon Kinesis
   * In a message queue model, an event often has intended consumers (an event with intended consumers is called a message), and the message queue is responsible for getting the message to the right consumers. e.g. - Apache RocketMQ and RabbitMQ
 17. Batch Processing Versus Stream Processing
+  * When data is processed in batch jobs, we refer to it as batch processing. Distributed systems like MapReduce and Spark to process batch data efficiently.
+  * Stream processing refers to doing computation on streaming data with real-time transports like Apache Kafka and Amazon Kinesis.
+  * Streaming technologies like Apache Flink are proven to be highly scalable and fully distributed, which means they can do computation in parallel.
+  * Batch features—features extracted through batch processing—are also known as static features. e.g. - driver rating
+  * Streaming features— features extracted through stream processing—are also known as dynamic features. e.g. - how many drivers are available right now
+  * Kafka stream processing is limited in its ability to deal with various data sources. To extract these features requires efficient stream processing engines. Stream processing is more difficult because the data amount is unbounded and the data comes in at variable rates and speeds.
 
 
