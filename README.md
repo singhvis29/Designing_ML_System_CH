@@ -88,4 +88,11 @@ This repo contains points discussed in the book Designing Machine Learning Syste
   * Streaming features— features extracted through stream processing—are also known as dynamic features. e.g. - how many drivers are available right now
   * Kafka stream processing is limited in its ability to deal with various data sources. To extract these features requires efficient stream processing engines. Stream processing is more difficult because the data amount is unbounded and the data comes in at variable rates and speeds.
 
+## Chapter 4: Training Data
+
+### Sampling:
+1. two families of sampling: nonprobability sampling and random sampling.
+2. Nonprobability Sampling: The samples selected by nonprobability criteria are not representative of the real- world data and therefore are riddled with selection biases. e.g.- Convenience sampling, Snowball sampling, Judgment sampling, Quota sampling
+3. Simple Random Sampling: all samples in the population equal probabilities of being selected. advantage of this method is that it’s easy to implement. The drawback is that rare categories of data might not appear in your selection.
+4. Stratified Sampling:  you can first divide your popula‐ tion into the groups that you care about and sample from each group separately. Each group is called a stratum. 
 
