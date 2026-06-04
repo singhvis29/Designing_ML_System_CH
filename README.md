@@ -94,5 +94,16 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 1. two families of sampling: nonprobability sampling and random sampling.
 2. Nonprobability Sampling: The samples selected by nonprobability criteria are not representative of the real- world data and therefore are riddled with selection biases. e.g.- Convenience sampling, Snowball sampling, Judgment sampling, Quota sampling
 3. Simple Random Sampling: all samples in the population equal probabilities of being selected. advantage of this method is that it’s easy to implement. The drawback is that rare categories of data might not appear in your selection.
-4. Stratified Sampling:  you can first divide your popula‐ tion into the groups that you care about and sample from each group separately. Each group is called a stratum. 
+4. Stratified Sampling:  you can first divide your population into the groups that you care about and sample from each group separately. Each group is called a stratum.
+5. Weighted Sampling: This method allows you to leverage domain expertise. For example, if you know that a certain subpopulation of data, such as more recent data, is more valuable to your model and want it to have a higher chance of being selected, you can give it a higher weight. Weighted sampling is used to select samples to train your model with, whereas sample weights are used to assign “weights” or “importance” to training samples. Samples with higher weights affect the loss function more.
+6. Reservoir Sampling: Reservoir Data is used when we streaming data. Each incoming nth element has n/k probability of being in the reservoir, where k is the size of reservoir.
+7. Importance Sampling: This kind of sampling allows us to sample from a distribution when we only have access to another distribution. Imagine you have to sample x from a distribution P(x), but P(x) is really expensive, slow, or infeasible to sample from. However, you have a distribution Q(x) that is a lot easier to sample from. So you sample x from Q(x) instead and weigh this sample by P(x)/Q(x) is called the proposal distribution or the importance distribution. E.g. - Reinforcement Learning
+
+### Labeling:
+8. Yahan
+9. Wahan
+10. Idhar
+11. Udhar
+
+
 
