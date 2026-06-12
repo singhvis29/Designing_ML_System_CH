@@ -100,10 +100,11 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 7. Importance Sampling: This kind of sampling allows us to sample from a distribution when we only have access to another distribution. Imagine you have to sample x from a distribution P(x), but P(x) is really expensive, slow, or infeasible to sample from. However, you have a distribution Q(x) that is a lot easier to sample from. So you sample x from Q(x) instead and weigh this sample by P(x)/Q(x) is called the proposal distribution or the importance distribution. E.g. - Reinforcement Learning
 
 ### Labeling:
-8. Yahan
-9. Wahan
-10. Idhar
-11. Udhar
+8. Hand Labeling: The technique of manually labelling the data. It can be tough to acquire hand labels as they are expensive, they can pose a threat to data privacy, they are slow, and there is an issue of different levels of accuracy. This leads to the problem of label ambiguity or label multiplicity. 
+9. Data Lineage: Indiscriminately using data from multiple sources, generated with different annota‐ tors, without examining their quality can cause your model to fail mysteriously. It’s good practice to keep track of the origin of each of your data samples as well as its labels, a technique known as data lineage.
+10. Natural Labels: Tasks with natural labels are tasks where the model’s predictions can be automatically evaluated or partially evaluated by the system. 
+11. Many tasks can be framed as recommendation tasks. For example, you can frame the task of predicting ads’ click-through rates as recommending the most relevant ads to users based on their activity histories and profiles. Natural labels that are inferred from user behaviors like clicks and ratings are also known as behavioral labels.
+12. 
 
 
 
