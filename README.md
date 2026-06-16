@@ -104,7 +104,10 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 9. Data Lineage: Indiscriminately using data from multiple sources, generated with different annota‐ tors, without examining their quality can cause your model to fail mysteriously. It’s good practice to keep track of the origin of each of your data samples as well as its labels, a technique known as data lineage.
 10. Natural Labels: Tasks with natural labels are tasks where the model’s predictions can be automatically evaluated or partially evaluated by the system. 
 11. Many tasks can be framed as recommendation tasks. For example, you can frame the task of predicting ads’ click-through rates as recommending the most relevant ads to users based on their activity histories and profiles. Natural labels that are inferred from user behaviors like clicks and ratings are also known as behavioral labels.
-12. 
+#### Handling Lack of Labels:
+12. Weak Supervision: Leverages (often noisy) heuristics to generate labels. No ground truth required, but a small number of labels are recommended to guide the development of heuristics. Labeling Method can include: Keyword heuristic, Regular Expression, Database Lookup, and Output of Other Models.
+13. Semi-Supervision: semi-supervision leverages structural assumptions to generate new labels based on a small set of initial labels. Unlike weak supervision, semi-supervision requires an initial set of labels. The similarity can only be discovered by more complex methods. For example, you might need to use a clustering method or a k-nearest neighbors algorithm to discover samples that belong to the same cluster or use the high probability predictions of the model to add to training data.
+
 
 
 
