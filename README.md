@@ -107,6 +107,15 @@ This repo contains points discussed in the book Designing Machine Learning Syste
 #### Handling Lack of Labels:
 12. Weak Supervision: Leverages (often noisy) heuristics to generate labels. No ground truth required, but a small number of labels are recommended to guide the development of heuristics. Labeling Method can include: Keyword heuristic, Regular Expression, Database Lookup, and Output of Other Models.
 13. Semi-Supervision: semi-supervision leverages structural assumptions to generate new labels based on a small set of initial labels. Unlike weak supervision, semi-supervision requires an initial set of labels. The similarity can only be discovered by more complex methods. For example, you might need to use a clustering method or a k-nearest neighbors algorithm to discover samples that belong to the same cluster or use the high probability predictions of the model to add to training data.
+14. Transfer Learning: Transfer learning refers to the family of methods where a model developed for a task is reused as the starting point for a model on a second task. In many cases, you might need to fine-tune the base model. Transfer learning also lowers the entry barriers in ML/AI.
+15. Active Learning: Active learning is a method for improving the efficiency of data labels. The hope here is that ML models can achieve greater accuracy with fewer training labels if they can choose which data samples to learn from. The most straightforward metric is uncertainty measurement—label the examples that your model is the least certain about.
+ * query-by-committee is a popular heuristic based on disagreement among multiple candidate models. You need a committee of several candidate models, which are usually the same model trained with different sets of hyperparameters or the same model trained on different slices of data. Each model can make one vote for which samples to label next, and it might vote based on how uncertain it is about the prediction. You then label the samples that the committee disagrees on the most.
+ * Labels can come from different data regimes -
+    - model generates samples in the region of the input space that it’s most uncertain about
+    - stationary distribution where you’ve already collected a lot of unlabeled data and your model chooses samples from this pool to label.
+    - real-world distribution where you have a stream of data coming in, as in production, and your model chooses samples from this stream of data to label.
+16. Class Imbalance: where there is a substantial difference in the number of samples in each class of the training data
+17. 
 
 
 
