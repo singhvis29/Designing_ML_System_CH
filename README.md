@@ -115,7 +115,7 @@ This repo contains points discussed in the book Designing Machine Learning Syste
     - stationary distribution where you’ve already collected a lot of unlabeled data and your model chooses samples from this pool to label.
     - real-world distribution where you have a stream of data coming in, as in production, and your model chooses samples from this stream of data to label.
 16. Class Imbalance: where there is a substantial difference in the number of samples in each class of the training data
-17. 
+17. It is important to choose the right metrics to handle class imbalance. If it's a classification problem it is recommended to use F1, precision, and recall, these are asymmetric metrics, which means that their values change depending on which class is considered the positive class.
 
 
 
