@@ -116,6 +116,14 @@ This repo contains points discussed in the book Designing Machine Learning Syste
     - real-world distribution where you have a stream of data coming in, as in production, and your model chooses samples from this stream of data to label.
 16. Class Imbalance: where there is a substantial difference in the number of samples in each class of the training data
 17. It is important to choose the right metrics to handle class imbalance. If it's a classification problem it is recommended to use F1, precision, and recall, these are asymmetric metrics, which means that their values change depending on which class is considered the positive class.
+18. **Resampling -**
+ i. Includes Oversampling (minority class) and Under Sampling (majority class). SMOTE and Tomek Links are popular techniques for Oversampling and Undersampling respectively
+ ii. Undersampling runs the risk of losing important data from removing data. Oversam‐ pling runs the risk of overfitting on training data, sophisticated sampling techniques have been developed to mitigate these risks - Two-Phase Learning and Dynamic Sampling
+19. Algorithm-level methods - Altering the loss function so that if there are two instances, x1 and x2, and the loss resulting from making the wrong prediction on x1 is higher than x2, the model will prioritize making the correct prediction on x1 over making the correct prediction on x2. By giving the training instances we care about higher weight, we can make the model focus more on learning these instances.
+   * Cost-sensitive Learning: using a cost matrix to specify Cij: the cost if class i is classified as class j. If i = j, it’s a correct classification, and the cost is usually 0. If not, it’s a misclassification. If classifying POSITIVE examples as NEGATIVE is twice as costly as the other way around, you can make C10 twice as high as C01.
+   * Class-balanced loss: punish the model for making wrong predictions on minority classes. In its vanilla form, we can make the weight of each class inversely proportional to the number of samples in that class, so that the rarer classes have higher weights.
+   * Focal Loss: djust the loss so that if a sample has a lower probability of being right, it’ll have a higher weight
+20. **Data Augmentation:**
 
 
 
