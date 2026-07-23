@@ -123,7 +123,12 @@ This repo contains points discussed in the book Designing Machine Learning Syste
    * Cost-sensitive Learning: using a cost matrix to specify Cij: the cost if class i is classified as class j. If i = j, it’s a correct classification, and the cost is usually 0. If not, it’s a misclassification. If classifying POSITIVE examples as NEGATIVE is twice as costly as the other way around, you can make C10 twice as high as C01.
    * Class-balanced loss: punish the model for making wrong predictions on minority classes. In its vanilla form, we can make the weight of each class inversely proportional to the number of samples in that class, so that the rarer classes have higher weights.
    * Focal Loss: djust the loss so that if a sample has a lower probability of being right, it’ll have a higher weight
-20. **Data Augmentation:**
+20. Data Augmentation: Data augmentation is a family of techniques that are used to increase the amount of training data.
+ * Simple Label-Preserving Transformations:  randomly modify an image while preserving its label. You can modify the image by cropping, flipping, rotating, inverting (horizontally or vertically), erasing part of the image, and more.
+ * Perturbation: In the case of computer vision, this means that adding a small amount of noise to an image can cause a neural network to misclassify it. Using deceptive data to trick a neural network into making wrong predictions is called adversarial attacks. Adversarial augmentation is less common in NLP.
+ * Data Synthesis: synthesize new data is to combine exist‐ ing examples with discrete labels to generate continuous labels. The label of x' is a combination of the labels of x1 and x2: γ×0+ 1−γ ×1. This method is called mixup.
+
+     
 
 
 
